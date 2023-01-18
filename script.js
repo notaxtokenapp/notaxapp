@@ -11,10 +11,11 @@ function loader(_success) {
   page = document.querySelector('.page');
   obj.classList.add('show');
   page.classList.remove('show');
+  let text = ' Loading ';
   var w = 0,
   t = setInterval(function () {
     w = w + 1;
-    inner.textContent = w + '%';
+    inner.textContent = "Loading"+ '...' +  w + '%';
     
     if (w === 99) {
       $('#page').show();
